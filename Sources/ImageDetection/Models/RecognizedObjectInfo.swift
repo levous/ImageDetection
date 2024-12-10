@@ -9,13 +9,13 @@ import Foundation
 import Vision
 
 public struct RecognizedObjectInfo {
-    let boundingBox: CGRect
-    let labels: [ObjectLabelInfo]
+    public let boundingBox: CGRect
+    public let labels: [ObjectLabelInfo]
 }
 
 public struct ObjectLabelInfo {
-    let identifier: String
-    let confidence: Float
+    public let identifier: String
+    public let confidence: Float
 }
 
 public extension RecognizedObjectInfo {
